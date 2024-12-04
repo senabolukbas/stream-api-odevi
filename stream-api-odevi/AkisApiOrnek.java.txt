@@ -1,0 +1,16 @@
+import java.util.Arrays;
+import java.util.List;
+
+public class AkisApiOrnek {
+    public static void main(String[] args) {
+        List<Kitap> kitaplar = Arrays.asList(
+                new Kitap("Java Programming", "John Doe"),
+                new Kitap("Learning Java", "Jane Doe"),
+                new Kitap("Advanced Java", "Jim Beam")
+        );
+
+        kitaplar.stream()
+                .filter(kitap -> kitap.getYazar().equals("Jane Doe"))
+                .forEach(System.out::println);
+    }
+}

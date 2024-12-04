@@ -1,0 +1,22 @@
+public class Kitap {
+    private String ad;
+    private String yazar;
+
+    public Kitap(String ad, String yazar) {
+        this.ad = ad;
+        this.yazar = yazar;
+    }
+
+    public String getAd() {
+        return ad;
+    }
+
+    public String getYazar() {
+        return yazar;
+    }
+
+    @Override
+    public String toString() {
+        return "Kitap adı: " + ad + ", Yazar: " + yazar;
+    }
+}
